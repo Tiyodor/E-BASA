@@ -7,7 +7,7 @@ function Sidenav() {
         <img src="/assets/imgs/menubt.png" alt="menu" id="menubt-image" />
       </a>
 
-      <a className="active" href="#home">
+      <a className="active" href="/Home">
         <img src="/assets/imgs/homebt.png" alt="homebt" id="homebt-image" />
       </a>
 

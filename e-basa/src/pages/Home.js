@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer'
 
 export default function Home() {
   return (
@@ -16,21 +17,21 @@ export default function Home() {
             alt="letter-logo"
             style={{ height: '300px', width: '250px' }}
           />
-          <a href="#letra" className="button letra-button">
+          <a href="/Letra" className="button letra-button">
             Mga Letra
           </a>
         </div>
 
         <div className="box1" data-aos="zoom-in" data-aos-delay="100">
           <img src="/assets/imgs/numerologo.png" alt='numlogo' style={{ height: '300px', width: '250px' }} />
-          <a href="#numero" className="button numero-button">
+          <a href="/Letra" className="button numero-button">
             Mga Numero
           </a>
         </div>
 
         <div className="box1" data-aos="zoom-in" data-aos-delay="100">
           <img src="/assets/imgs/hayoplogo.png" alt='hayoplogo' style={{ height: '300px', width: '250px' }} />
-          <a href="#hayop" className="button hayop-button">
+          <a href="/letra" className="button hayop-button">
             Mga Hayop
           </a>
         </div>
@@ -104,6 +105,7 @@ export default function Home() {
           </a>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

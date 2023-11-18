@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://fonts.cdnfonts.com/css/happy-school" rel="stylesheet">
+
 <style>
 body {
   margin: 0;
@@ -10,6 +12,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  font-family: 'Happy School', sans-serif;
 }
 
 .centered-image {
@@ -64,15 +67,14 @@ button {
 }
 
 .registration-container {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
+  width: 900px; /* Adjust width to accommodate the widest input */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
     align-items: center;
     border-radius: 20px;
     background: rgba(201, 240, 247, 0.68);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 20px;
-    margin-bottom: 20px; /* Add margin-bottom to create space between registration and login */
 }
 
 .under-reg {
@@ -91,6 +93,22 @@ input {
     border-radius: 50px;
     border-color: transparent;
 }
+
+.width-665 {
+  width: 550px;
+  /* Adjust spacing between inputs */
+}
+
+.width-514 {
+  width: 350px;
+  /* Adjust spacing between inputs */
+}
+
+.width-350 {
+  width: 350px;
+ /* Adjust spacing between inputs */
+}
+
 </style>
 </head>
 <body>
@@ -102,16 +120,17 @@ input {
 
 <div class="container">
   <div class="registration-container">
-    <input type="text" id="username" placeholder="Username" name="username" required>
-    <input type="text" id="username" placeholder="Username" name="username" required>
-    <input type="text" id="username" placeholder="Username" name="username" required>
-    <input type="text" id="username" placeholder="Username" name="username" required>
-    <input type="text" id="username" placeholder="Username" name="username" required>
-    <input type="text" id="username" placeholder="Username" name="username" required>
-    <input type="text" id="username" placeholder="Username" name="username" required>
-    <input type="text" id="username" placeholder="Username" name="username" required>
-    <input type="text" id="username" placeholder="Username" name="username" required>
+    <input type="text" class="width-665" placeholder="Username" name="username" required>
+    <input type="text" class="width-665" placeholder="Username" name="username" required>
+    <input type="text" class="width-665" placeholder="Username" name="username" required>
+    <input type="text" class="width-514" placeholder="Username" name="username" required>
+    <input type="text" class="width-514" placeholder="Username" name="username" required>
+    <input type="text" class="width-514" placeholder="Username" name="username" required>
+    <input type="text" class="width-350" placeholder="Username" name="username" required>
+    <input type="text" class="width-350" placeholder="Username" name="username" required>
+    <input type="text" class="width-350" placeholder="Username" name="username" required>
   </div>
+  
 
   <div class="under-reg">
     <button type="submit">LOG IN</button>

@@ -6,6 +6,7 @@ import Sidenav from './pages/Sidenav';
 import Footer from './pages/Footer';
 import Profile from './pages/Profile';
 import Ranks from './pages/Ranks'; 
+import Letra from './pages/letra';
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
           <Route path="/home" component={Home} />
           <Route path="/profile" component={Profile} /> 
           <Route path="/ranks" component={Ranks} /> 
+          <Route path="/letra" component={Letra} /> 
         </Switch>
         <Sidenav />
-        <Footer />
+
       </div>
     </Router>
   );
