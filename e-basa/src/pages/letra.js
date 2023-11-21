@@ -6,9 +6,9 @@ import 'slick-carousel/slick/slick-theme.css';
 function Letra() {
   const settings = {
     dots: false, // This line removes the dots
-    infinite: false,
+    infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     responsive: [
       {
         breakpoint: 1024,

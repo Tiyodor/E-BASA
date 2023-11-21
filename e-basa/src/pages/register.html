@@ -67,14 +67,14 @@ button {
 }
 
 .registration-container {
-  width: 900px; /* Adjust width to accommodate the widest input */
+  width: 1250px; /* Adjust width to accommodate the widest input */
+  height: 400px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-    align-items: center;
     border-radius: 20px;
     background: rgba(201, 240, 247, 0.68);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    margin-top: 50px;
 }
 
 .under-reg {
@@ -94,21 +94,34 @@ input {
     border-color: transparent;
 }
 
-.width-665 {
+.Fcol {
+ 
+}
+
+.Fcol input{
   width: 550px;
+
   /* Adjust spacing between inputs */
 }
 
-.width-514 {
+.Scol {
+
+}
+
+.Scol input{
   width: 350px;
+  
   /* Adjust spacing between inputs */
 }
 
-.width-350 {
+.Lcol {
+ 
+}
+
+.Lcol input{
   width: 350px;
  /* Adjust spacing between inputs */
 }
-
 </style>
 </head>
 <body>
@@ -120,17 +133,24 @@ input {
 
 <div class="container">
   <div class="registration-container">
-    <input type="text" class="width-665" placeholder="Username" name="username" required>
-    <input type="text" class="width-665" placeholder="Username" name="username" required>
-    <input type="text" class="width-665" placeholder="Username" name="username" required>
-    <input type="text" class="width-514" placeholder="Username" name="username" required>
-    <input type="text" class="width-514" placeholder="Username" name="username" required>
-    <input type="text" class="width-514" placeholder="Username" name="username" required>
-    <input type="text" class="width-350" placeholder="Username" name="username" required>
-    <input type="text" class="width-350" placeholder="Username" name="username" required>
-    <input type="text" class="width-350" placeholder="Username" name="username" required>
+    <div class="Fcol">
+    <input type="text"  placeholder="Username" name="username" required>
+    <input type="text"  placeholder="Username" name="username" required>
+    <input type="text"  placeholder="Username" name="username" required>
   </div>
-  
+
+  <div class="Scol">
+    <input type="text" placeholder="Username" name="username" required>
+    <input type="text" placeholder="Username" name="username" required>
+    <input type="text" placeholder="Username" name="username" required>
+  </div>
+
+  <div class="Lcol">
+    <input type="text" placeholder="Username" name="username" required>
+    <input type="text" placeholder="Username" name="username" required>
+    <input type="text" placeholder="Username" name="username" required>
+  </div>
+</div>
 
   <div class="under-reg">
     <button type="submit">LOG IN</button>

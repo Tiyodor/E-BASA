@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './pages/Navbar';
 import Home from './pages/Home';
 import Sidenav from './pages/Sidenav';
-import Footer from './pages/Footer';
 import Profile from './pages/Profile';
 import Ranks from './pages/Ranks'; 
 import Letra from './pages/letra';
