@@ -3,6 +3,10 @@ import './login.css';
 
 function Signin() {
   return (
+    <>
+     <div className='loginbot'>
+      <img src={process.env.PUBLIC_URL + '/assets/imgs/loginbot.png'}  />
+    </div>
     <div className='loginbg'>
       <div className="clouds">
         <img src={process.env.PUBLIC_URL + '/assets/imgs/clouds1.png'} className="clouds-img" alt="Clouds" />
@@ -25,6 +29,8 @@ function Signin() {
         <p>Don't have an account? <a href="/registration">Click here</a></p>
       </div>
     </div>
+    
+    </>
   );
 }
 

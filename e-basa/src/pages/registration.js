@@ -3,7 +3,11 @@ import './login.css'; // Assuming you have a CSS file for styling
 
 function registration() {
   return (
-    <div className="loginbg">
+    <>
+     <div className='loginbot'>
+      <img src={process.env.PUBLIC_URL + '/assets/imgs/loginbot.png'}  />
+    </div>
+        <div className="loginbg">
        <div className="clouds">
         <img src={process.env.PUBLIC_URL + '/assets/imgs/clouds1.png'} className="clouds-img" alt="Clouds" />
       </div>
@@ -44,6 +48,7 @@ function registration() {
         <p>Already have an account? <a href="/signin">Login here</a></p>
       </div>
     </div>
+    </>
   );
 }
 

@@ -3,6 +3,10 @@ import './login.css';
 
 function Login() {
   return (
+    <>
+      <div className='loginbot'>
+      <img src={process.env.PUBLIC_URL + '/assets/imgs/loginbot.png'}  />
+    </div>
     <div className='loginbg'>
       <div className="clouds">
         <img src={process.env.PUBLIC_URL + '/assets/imgs/clouds1.png'} className="clouds-img" alt="Clouds" />
@@ -19,6 +23,8 @@ function Login() {
         </a>
       </div>
     </div>
+   
+    </>
   );
 }
 

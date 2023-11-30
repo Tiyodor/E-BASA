@@ -1,11 +1,12 @@
 .loginbg {
   top: 50;
   height: 100vh;
-  background-image: url('/public/assets/imgs/loginbg.png');
+  background-color: #13DFFE;
   background-position: center center;
   background-size: 'contain';
   
 }
+
 
   .centered-image {
       position: absolute;
@@ -143,4 +144,16 @@ padding: 20px;
 .Bcontainer input{
   flex: 0 0 43.7%;
   
+}
+
+.loginbot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-image: url('/public/assets/imgs/loginbot.png'); /* Replace with your image URL */
+  background-size: contain; /* Adjust the size of the background */
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  /* Add other styles for your loginbot */
 }
