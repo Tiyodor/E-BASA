@@ -157,3 +157,11 @@ padding: 20px;
   background-position: center bottom;
   /* Add other styles for your loginbot */
 }
+
+.guidepage-bg{
+  position: fixed;
+  width: 100%;
+  background-image: url('/public/assets/imgs/guidebg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}

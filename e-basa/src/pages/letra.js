@@ -7,7 +7,7 @@ import Sidenav from './Sidenav';
 
 function Letra() {
   const settings = {
-    dots: false, // This line removes the dots
+    dots: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 2,
@@ -18,7 +18,7 @@ function Letra() {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: false, // Adjust for different breakpoints if needed
+          dots: false,
         },
       },
       {
@@ -27,7 +27,7 @@ function Letra() {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-          dots: false, // Adjust for different breakpoints if needed
+          dots: false,
         },
       },
     ],
@@ -36,9 +36,9 @@ function Letra() {
   return (
     <div>
       <div>
-      <Navbar />
-      <Sidenav />
-    </div>
+        <Navbar />
+        <Sidenav />
+      </div>
       <br/>
       <br/>
       <br/>
@@ -52,11 +52,13 @@ function Letra() {
       <Slider {...settings} >
         {[...Array(10)].map((_, index) => (
           <div key={index} className="box1">
-            <img
-              src={`/assets/imgs/num${index + 1}.png`}
-              alt={`level ${index + 1}`}
-              style={{ height: '300px', width: '250px' }}
-            />
+            <a href={`/guidepage/${index + 1}`} rel="noopener noreferrer">
+              <img
+                src={`/assets/imgs/num${index + 1}.png`}
+                alt={`level ${index + 1}`}
+                style={{ height: '300px', width: '250px' }}
+              />
+            </a>
           </div>
         ))}
       </Slider>

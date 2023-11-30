@@ -7,6 +7,7 @@ import Letra from './pages/letra';
 import Login from './pages/login';
 import Signin from './pages/signin';
 import Registration from './pages/registration';
+import Guidepage from './pages/guidepage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/letra" component={Letra} /> 
           <Route path="/signin" component={Signin} />
           <Route path="/registration" component={Registration} />
+          <Route path="/guidepage" component={Guidepage} />
         </Switch>
        
 

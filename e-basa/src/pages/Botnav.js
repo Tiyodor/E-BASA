@@ -6,7 +6,9 @@ function Botnav() {
 return (
     <div class="botnav">  
     <div class="botnav-bt" href="#home">
+      <a href='/home'>
       <img src="/assets/imgs/ingame/home.png" alt="home" id="home-image" />
+      </a>
     </div>
     <div class="botnav-bt" href="#home">
       <img src="/assets/imgs/ingame/music.png" alt="music" id="music-image" />

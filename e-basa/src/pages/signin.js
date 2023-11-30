@@ -23,7 +23,7 @@ function Signin() {
       <div className="login-container">
         <input type="text" id="username" placeholder="Username" name="username" required />
         <input type="password" id="password" placeholder="Password" name="password" required />
-        <a href="/Home">
+        <a href="/guidepage">
           <button type="submit">LOG IN</button>
         </a>
         <p>Don't have an account? <a href="/registration">Click here</a></p>
