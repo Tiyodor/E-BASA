@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('G:/Project/React/e-basa/public/assets/imgs/Landingbk.png');
+  background-image: url('/public/assets/imgs/Landingbk.png');
   background-size: cover;
   background-repeat: no-repeat; 
   font-family: 'Happy School', sans-serif;
@@ -11,7 +11,7 @@ body {
 footer {
   margin: 0;
   padding: 0;
-  background-image: url('G:/Project/React/e-basa/public/assets/imgs/footer.png');
+  background-image: url('/public/assets/imgs/footer.png');
   background-size: cover;
   background-repeat: no-repeat; 
   align-items: center;
@@ -78,31 +78,31 @@ footer {
 
 
 #trophy-image:hover {
-  content: url('G:/Project/React/e-basa/public/assets/imgs/trophy-hover.png');
+  content: url('/public/assets/imgs/trophy-hover.png');
 }
 
 #puntos-image:hover {
-  content: url('G:/Project/React/e-basa/public/assets/imgs/puntos-hover.png');
+  content: url('/public/assets/imgs/puntos-hover.png');
 }
 
 #kwento-image:hover {
-  content: url('G:/Project/React/e-basa/public/assets/imgs/kwento-hover.png');
+  content: url('/public/assets/imgs/kwento-hover.png');
 }
 
 #menubt-image:hover {
-  content: url('G:/Project/React/e-basa/public/assets/imgs/menuhv.png');
+  content: url('/public/assets/imgs/menuhv.png');
 }
 
 #homebt-image:hover {
-  content: url('G:/Project/React/e-basa/public/assets/imgs/homehv.png');
+  content: url('/public/assets/imgs/homehv.png');
 }
 
 #soundbt-image:hover {
-  content: url('G:/Project/React/e-basa/public/assets/imgs/soundhv.png');
+  content: url('/public/assets/imgs/soundhv.png');
 }
 
 #settingbt-image:hover {
-  content: url('G:/Project/React/e-basa/public/assets/imgs/settinghv.png');
+  content: url('/public/assets/imgs/settinghv.png');
 }
 
 

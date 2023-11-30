@@ -1,7 +1,7 @@
 .loginbg {
     top: 50;
     height: 100vh;
-    background-image: url('G:/Project/React/e-basa/public/assets/imgs/loginbg.png');
+    background-image: url('/public/assets/imgs/loginbg.png');
     background-position: center center;
     background-size: 'contain';
   }
