@@ -1,9 +1,16 @@
 import React from 'react';
+import Navbar from './Navbar';
+import Sidenav from './Sidenav';
 
 
 function Profile() {
   return (
     <div>
+      <div>
+      <Navbar />
+      <Sidenav />
+    </div>
+    
   <br/>
   <br/>
   <br/>
@@ -46,6 +53,9 @@ function Profile() {
           </div>
         </div>
       </div>
+      <a href="/login" className="logout-button" >
+              log out
+              </a>
 
     
     </div>

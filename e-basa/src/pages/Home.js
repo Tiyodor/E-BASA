@@ -1,9 +1,16 @@
 import React from 'react';
 import Footer from './Footer'
+import Navbar from './Navbar';
+import Sidenav from './Sidenav';
+
 
 export default function Home() {
   return (
     <>
+    <div>
+      <Navbar />
+      <Sidenav />
+    </div>
     
       <br />
       <br />

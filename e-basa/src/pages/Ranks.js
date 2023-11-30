@@ -1,8 +1,14 @@
 import React from 'react'
+import Navbar from './Navbar';
+import Sidenav from './Sidenav';
 
 export default function Ranks() {
   return (
     <div>
+      <div>
+      <Navbar />
+      <Sidenav />
+    </div>
        <br/>
   <br/>
   <br/>
