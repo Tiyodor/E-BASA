@@ -19,17 +19,17 @@ const Login = () => {
         <img src={process.env.PUBLIC_URL + '/assets/imgs/clouds1.png'} className="clouds-img" alt="Clouds" />
       </div>
 
-      <a href="/login">
+      
         <img
           src={process.env.PUBLIC_URL + '/assets/imgs/nav-logo.png'}
           alt="Centered Image"
           className="centered-image"
         />
-      </a>
-
+    
       <div className="login-container">
         <input type="text" id="username" placeholder="Username" name="username" required />
         <input type="password" id="password" placeholder="Password" name="password" required />
+        
         <Link to="/home" onClick={() => handleMenuClick('home')}>
           <button type="submit">LOG IN</button>
         </Link>
