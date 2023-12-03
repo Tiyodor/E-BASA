@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-function Sidenav() {
+const Sidenav = () => {
+  const [selectedMenu, setSelectedMenu] = useState('Home');
+
+  const handleMenuClick = (menu) => {
+    setSelectedMenu(menu);
+  };
   return (
     <div className="sidenav">
-      <a className="active" href="#menu">
+       <Link to="/" onClick={() => handleMenuClick('#')}>
         <img src="/assets/imgs/menubt.png" alt="menu" id="menubt-image" />
-      </a>
+      </Link>
 
-      <a className="active" href="/Home">
+      <Link to="/home" onClick={() => handleMenuClick('home')}>
         <img src="/assets/imgs/homebt.png" alt="homebt" id="homebt-image" />
-      </a>
+      </Link>
 
       <a className="active" href="#sound">
         <img src="/assets/imgs/soundbt.png" alt="soundbt" id="soundbt-image" />

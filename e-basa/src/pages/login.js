@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './login.css';
 
-function Login() {
+const Login = () => {
+  const [selectedMenu, setSelectedMenu] = useState('Home');
+
+  const handleMenuClick = (menu) => {
+    setSelectedMenu(menu);
+  };
+
   return (
     <>
-      <div className='loginbot'>
+     <div className='loginbot'>
       <img src={process.env.PUBLIC_URL + '/assets/imgs/loginbot.png'}  />
     </div>
     <div className='loginbg'>
@@ -12,18 +19,24 @@ function Login() {
         <img src={process.env.PUBLIC_URL + '/assets/imgs/clouds1.png'} className="clouds-img" alt="Clouds" />
       </div>
 
-      <img src={process.env.PUBLIC_URL + '/assets/imgs/nav-logo.png'} alt="Centered Image" className="centered-image" />
+      <a href="/login">
+        <img
+          src={process.env.PUBLIC_URL + '/assets/imgs/nav-logo.png'}
+          alt="Centered Image"
+          className="centered-image"
+        />
+      </a>
 
-      <div className="button-container">
-        <a href="/registration">
-          <button type="button">CREATE AN ACCOUNT</button>
-        </a>
-        <a href="/signin">
-          <button type="button">LOG IN</button>
-        </a>
+      <div className="login-container">
+        <input type="text" id="username" placeholder="Username" name="username" required />
+        <input type="password" id="password" placeholder="Password" name="password" required />
+        <Link to="/home" onClick={() => handleMenuClick('home')}>
+          <button type="submit">LOG IN</button>
+        </Link>
+
       </div>
     </div>
-   
+    
     </>
   );
 }
